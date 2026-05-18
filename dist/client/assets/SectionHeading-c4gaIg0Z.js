@@ -1,0 +1,1 @@
+import{j as n}from"./jsx-runtime-DG3v8RBo.js";function c({title:i,subtitle:e,className:s=""}){return n.jsxs("div",{className:`section-heading ${s}`,children:[n.jsx("h2",{children:i}),e&&n.jsx("p",{children:e})]})}export{c as S};

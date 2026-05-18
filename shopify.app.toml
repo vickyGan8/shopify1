@@ -1,0 +1,172 @@
+# EasyTime B2B Watch Accessories — Data Model
+
+[app]
+name = "easytime-b2b"
+handle = "easytime-b2b"
+
+# ── Product Metafields ──────────────────────────────────────
+
+[product.metafields.app.moq]
+name = "Minimum Order Quantity"
+type = "number_integer"
+validations.min = 1
+access.admin = "merchant_read_write"
+access.storefront = "public_read"
+
+[product.metafields.app.lead_time_days]
+name = "Lead Time (Days)"
+type = "number_integer"
+access.admin = "merchant_read_write"
+access.storefront = "public_read"
+
+[product.metafields.app.sample_available]
+name = "Sample Available"
+type = "true_false"
+access.admin = "merchant_read_write"
+access.storefront = "public_read"
+
+[product.metafields.app.material]
+name = "Material"
+type = "single_line_text_field"
+access.admin = "merchant_read_write"
+access.storefront = "public_read"
+
+# ── Metaobject: Product Specification ──────────────────────
+
+[metaobjects.app.product_specification]
+name = "Product Specification"
+display_name_field = "title"
+access.admin = "merchant_read_write"
+access.storefront = "public_read"
+
+[metaobjects.app.product_specification.fields.title]
+name = "Specification Title"
+type = "single_line_text_field"
+required = true
+
+[metaobjects.app.product_specification.fields.material]
+name = "Material"
+type = "single_line_text_field"
+
+[metaobjects.app.product_specification.fields.band_width]
+name = "Band Width (mm)"
+type = "single_line_text_field"
+
+[metaobjects.app.product_specification.fields.buckle_type]
+name = "Buckle Type"
+type = "single_line_text_field"
+
+[metaobjects.app.product_specification.fields.water_resistance]
+name = "Water Resistance"
+type = "single_line_text_field"
+
+[metaobjects.app.product_specification.fields.weight]
+name = "Weight (g)"
+type = "number_decimal"
+
+[metaobjects.app.product_specification.fields.color_options]
+name = "Available Colors"
+type = "single_line_text_field"
+
+[metaobjects.app.product_specification.fields.customization_options]
+name = "Customization Options"
+type = "multi_line_text_field"
+
+[metaobjects.app.product_specification.fields.packaging]
+name = "Packaging Details"
+type = "single_line_text_field"
+
+# ── Metaobject: Factory Information ────────────────────────
+
+[metaobjects.app.factory_info]
+name = "Factory Information"
+display_name_field = "company_name"
+access.admin = "merchant_read_write"
+access.storefront = "public_read"
+
+[metaobjects.app.factory_info.fields.company_name]
+name = "Company Name"
+type = "single_line_text_field"
+required = true
+
+[metaobjects.app.factory_info.fields.founded_year]
+name = "Founded Year"
+type = "number_integer"
+
+[metaobjects.app.factory_info.fields.headquarters]
+name = "Headquarters"
+type = "single_line_text_field"
+
+[metaobjects.app.factory_info.fields.factory_size_sqm]
+name = "Factory Size (sqm)"
+type = "number_integer"
+
+[metaobjects.app.factory_info.fields.employee_count]
+name = "Employee Count"
+type = "number_integer"
+
+[metaobjects.app.factory_info.fields.annual_capacity]
+name = "Annual Production Capacity"
+type = "single_line_text_field"
+
+[metaobjects.app.factory_info.fields.equipment_list]
+name = "Equipment List"
+type = "multi_line_text_field"
+
+[metaobjects.app.factory_info.fields.quality_control]
+name = "Quality Control Process"
+type = "rich_text_field"
+
+[metaobjects.app.factory_info.fields.certifications_list]
+name = "Certifications"
+type = "multi_line_text_field"
+
+[metaobjects.app.factory_info.fields.company_description]
+name = "Company Description"
+type = "rich_text_field"
+
+# ── Metaobject: Core Advantage ─────────────────────────────
+
+[metaobjects.app.core_advantage]
+name = "Core Advantage"
+display_name_field = "title"
+access.admin = "merchant_read_write"
+access.storefront = "public_read"
+
+[metaobjects.app.core_advantage.fields.title]
+name = "Advantage Title"
+type = "single_line_text_field"
+required = true
+
+[metaobjects.app.core_advantage.fields.description]
+name = "Description"
+type = "multi_line_text_field"
+
+[metaobjects.app.core_advantage.fields.icon]
+name = "Icon Name"
+type = "single_line_text_field"
+
+[metaobjects.app.core_advantage.fields.sort_order]
+name = "Sort Order"
+type = "number_integer"
+
+# ── Metaobject: Certificate ────────────────────────────────
+
+[metaobjects.app.certificate]
+name = "Certificate"
+display_name_field = "name"
+access.admin = "merchant_read_write"
+access.storefront = "public_read"
+
+[metaobjects.app.certificate.fields.name]
+name = "Certificate Name"
+type = "single_line_text_field"
+required = true
+
+[metaobjects.app.certificate.fields.issuing_body]
+name = "Issuing Body"
+type = "single_line_text_field"
+
+[metaobjects.app.certificate.fields.certificate_file]
+name = "Certificate File"
+type = "file_reference"

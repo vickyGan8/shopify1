@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #2C5F8A;
+  --color-primary-light: #3A7DB5;
+  --color-primary-dark: #005A8A;
+  --color-primary-50: #EBF1F6;
+  --color-primary-100: #D6E3ED;
+  --color-primary-200: #ADC7DA;
+  --color-primary-300: #85ABC8;
+  --color-primary-400: #5C8FB5;
+  --color-primary-500: #2C5F8A;
+  --color-primary-600: #005A8A;
+  --color-primary-700: #003F61;
+  --color-primary-800: #002A41;
+  --color-primary-900: #001520;
+
+  --color-accent: #EAAA00;
+  --color-accent-light: #F5C842;
+  --color-accent-dark: #C48F00;
+  --color-accent-50: #FFF8E0;
+  --color-accent-100: #FFF0B3;
+  --color-accent-200: #FFE080;
+  --color-accent-300: #F5C842;
+  --color-accent-400: #EAAA00;
+  --color-accent-500: #C48F00;
+  --color-accent-600: #9E7300;
+  --color-accent-700: #785800;
+  --color-accent-800: #523C00;
+  --color-accent-900: #2C2000;
+
+  --color-bg-primary: #F4F7F6;
+  --color-bg-white: #FFFFFF;
+  --color-bg-dark: #1A1A2E;
+
+  --color-text-primary: #212121;
+  --color-text-secondary: #757575;
+  --color-text-inverse: #FFFFFF;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --spacing-section: 5rem;
+  --max-width-container: 1280px;
+}
